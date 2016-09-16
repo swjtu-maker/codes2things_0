@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/print.css" media="print">
+
+    <title>codes2things 2016:Computer Controlled Machinning</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="../../index.html" title="codes2things course homepage">codes2things</a> / <a href="./index.html">2016</a> /Computer Controlled Machining</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>Machining 机械加工</h3>
+        <p>
+         Machining is any of various processes in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing, in distinction from processes of controlled material addition, which are known as additive manufacturing. Exactly what the "controlled" part of the definition implies can vary, but it almost always implies the use of machine tools (in addition to just power tools and hand tools).(From Wikipedia <a href="https://en.wikipedia.org/wiki/Machining" >Machining</a>)
+        </p>
+        <h3>一些项目</h3>
+        <p>
+         <a href="https://www.opendesk.cc/china">OpenDesk</a>
+         <br/>
+         <i>Opendesk旨在全球范围内提供独具创新的、可持续发展的设计家具，所有产品均使用绿色环保的材料，并通过数字设计和数字加工技术实现本地化生产。</i>
+         <br/>
+         <a href="http://blog.ted.com/digitally_fabbe/">yourHOUSE</a>
+         <br/>
+         <i>yourHOUSE is a ground-up rethinking of how we make a house. Sass and a team of students analyzed the traditional New Orleans shotgun house, using digital imaging tools and old-fashioned research, such as interviewing people who live in these wonderful little homes. They modeled a way to build a house out of parts that could be created on-site and assembled in days without nails or screws.</i>
+         <br/>
+         <a href="http://www.shelter20.com">shelter20</a>
+         <br/>
+         <i>Shelter 2.0 is  a digitally fabricated transitional shelter designed by Bill Young and Robert Bridges.  It is our hope that by offering our designs and cut files to anyone who needs them or has the desire to help those in need that we can help change the way the homeless and displaced are provided for in the future.</i>
+        </p>
+
+        <h3>机器 Machine以及常见加工方法</h3>
+        <p><a href="http://www.efunda.com/processes/machining/machin_intro.cfm">Machining: An Introduction</a></p>
+        <p>数控车床、数控铣床、加工中心、数控雕刻、线切割、激光切割</p>
+
+        <h3>Relationship of subtractive and additive techniques</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Machining">增材与切削</a></p>
+
+        <h3>From Code To  Machine</h3>
+        <p>Model--> GCode --> Controller --> Motor  --> Machine</p>
+
+
+        <h3>Reprap 3D Printer</h3>
+          <img src="http://www.reprap.org/mediawiki/images/3/3f/RepRap_Component_Structure.svg" /><br/>
+          <h4>Software Toolchain</h4>
+          <img src="http://www.reprap.org/mediawiki/images/9/92/RepRap_Toolchain.jpg" />
+          <ol>
+            <li>CAD tools</li>
+            <li>CAM tools</li>
+            <li>Firmware for electronics.</li>
+          </ol>
+          <a href="http://www.reprap.org/wiki/RepRap_Options"></a><br/>
+        <h3>Grbl CNC</h3>
+        <p><a href="https://github.com/grbl/grbl">Grbl</a>is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling. It will run on a vanilla Arduino (Duemillanove/Uno) as long as it sports an Atmega 328.
+
+        </p>
+        <h4>GRBL CNC GCODE</h4>
+        <p>
+          List of Supported G-Codes in Grbl v0.9 Master: <br/>
+            - Non-Modal Commands: G4, G10L2, G10L20, G28, G30, G28.1, G30.1, G53, G92, G92.1 <br/>
+            - Motion Modes: G0, G1, G2, G3, G38.2, G38.3, G38.4, G38.5, G80 <br/>
+            - Feed Rate Modes: G93, G94 <br/>
+            - Unit Modes: G20, G21 <br/>
+            - Distance Modes: G90, G91 <br/>
+            - Arc IJK Distance Modes: G91.1 <br/>
+            - Plane Select Modes: G17, G18, G19 <br/>
+            - Tool Length Offset Modes: G43.1, G49 <br/>
+            - Cutter Compensation Modes: G40 <br/>
+            - Coordinate System Modes: G54, G55, G56, G57, G58, G59 <br/>
+            - Control Modes: G61 <br/>
+            - Program Flow: M0, M1, M2, M30* <br/>
+            - Coolant Control: M7*, M8, M9 <br/>
+            - Spindle Control: M3, M4, M5 <br/>
+            - Valid Non-Command Words: F, I, J, K, L, N, P, R, S, T, X, Y, Z <br/>
+        </p>
+        <h4>GRBL Draw a Circle Example</h4>
+        <p>This program draws a 1" diameter circle about the origin in the X-Y plane. It should begin by seeking the Z-axis to 0.25", travel to X=-0.5 and Y=0.0, and lower back to Z=0.0. The program will then draw a clockwise circle at a slow feedrate. When finished, it will lift the Z-axis up 0.1" and then seek back to X=0.0, Y=0.0, and Z=0.25 to complete.</p>
+        <p>
+          G17 G20 G90 G94 G54 <br/>
+          G0 Z0.25 <br/>
+          X-0.5 Y0.<br/>
+          Z0.1<br/>
+          G01 Z0. F5. <br/>
+          G02 X0. Y0.5 I0.5 J0. F2.5 <br/>
+          X0.5 Y0. I0. J-0.5 <br/>
+          X0. Y-0.5 I-0.5 J0. <br/>
+          X-0.5 Y0. I0. J0.5 <br/>
+          G01 Z0.1 F5. <br/>
+          G00 X0. Y0. Z0.25 <br/>
+        </p>
+
+        <h3>assessment</h3>
+        <p>分组，在一个小时内，使用3D打印机或者CNC制作一个物品，然后每组准备一个一个5分钟的报告，分享过程、经验、以及对代码到机器操作过程的理解。</p>
+      </section>
+    </div>
+
+
+  </body>
+</html>
