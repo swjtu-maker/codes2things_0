@@ -1,179 +1,69 @@
+/*basic define*/
 body {
   margin: 0;
   padding: 0;
-  color: #000;
-  font: 16px;
-  line-height: 1.5;
-  font-family: monospace;
+  font-size: 14px;
+  font-family:serif;
+}
+h1,h2,h3,h4,h5{
+  margin:0px;
 }
 
-/* General & 'Reset' Stuff */
+/*layout*/
+.header{
+}
 
 .container {
-  width: 90%;
-  max-width: 600px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
-section {
-  display: block;
-  margin: 0 0 20px 0;
+.content{
+  margin-top:20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
-}
-
-li {
-  line-height: 1.4 ;
-}
-
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
-header {
-  background: rgba(0, 0, 255, 0.1);
-  width: 100%;
-  border-bottom: 1px dashed #b5e853;
-  margin: 0 0 12px 0;
-}
-
-header h1 {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0 0 0 -40px;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
-}
-
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}
-
-header h2 {
-  font-size: 12px;
-  font-weight: 300;
-}
-
-#downloads .btn {
+a{
+  color: rgb(0,50,150);
   display: inline-block;
-  text-align: center;
-  margin: 0;
+  text-decoration: none;
 }
 
-/* Main Content
-*/
-
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
+/*header*/
+.header .nav{
+  margin-top:1em;
 }
-section img {
-  max-width: 100%
+.header .nav a{
+  font-size:1.5em;
+  margin-right:1em;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+.header .nav a:hover{
+  background-color: rgb(0,50,150);
+  color:rgb(255,255,255);
+  padding: 0px 0px 40px 0px;
 }
 
-#main_content h1 {
-  font-size: 30px;
+/*.content*/
+.content h3.title{
+  border-left:2px solid rgba(0,50,150,0.5);
+  border-bottom:6px solid rgba(0,50,150,1);
+  font-size:1.5em;
+  padding-left:1em;
+  padding-bottom:0.5em;
+
 }
 
-#main_content h2 {
-  font-size: 24px;
-}
-
-#main_content h3 {
-  font-size: 18px;
-}
-
-#main_content h4 {
-  font-size: 14px;
-}
-
-#main_content h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-
-#main_content h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-
-dt {
-  font-style: italic;
-  font-weight: bold;
-}
-
-ul li {
-  list-style: none;
-}
-
-ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
-}
-
-blockquote {
-  padding-left: 10px;
-  border-left: 1px dotted #666;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
-}
-
+/*table*/
 table {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 10px 0 10px 0;
+  border-top:1px solid rgba(200,200,200,1);
+  border-bottom:1px solid rgba(200,200,200,1);
+}
+thead tr th{
+  border-bottom:1px solid rgba(200,200,200,1);
 }
 
-th {
-  text-align: left;
-  border-bottom: 1px dashed #b5e853;
-  padding: 5px 10px;
-}
 
-td {
-  padding: 5px 10px;
-}
-
-hr {
-  height: 0;
-  border: 0;
-  border-bottom: 1px dashed #b5e853;
-}
 
 /* Buttons
 */
@@ -191,27 +81,4 @@ hr {
 
 .btn-github .icon {
 
-}
-
-/* Links
-   a, a:hover, a:visited
-*/
-
-a {
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
-}
-
-/* Clearfix */
-
-.cf:before, .cf:after {
-  content:"";
-  display:table;
-}
-
-.cf:after {
-  clear:both;
-}
-
-.cf {
-  zoom:1;
 }

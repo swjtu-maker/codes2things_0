@@ -1,97 +1,242 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <title>Codes2things:Making what you thinking. 从代码到实物：造你所想</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <title>西南交通大学从代码到实物：造你所想课程</title>
   </head>
-
   <body>
-    <header>
+    <div class="header">
       <div class="container">
-        <h1>从代码到实物：造你所想</h1>
-        <h2>From codes to things:Making what you thinking. </h2>
-        <section id="downloads">
-          <a href="#welcome" class="btn btn-github"><span class="icon"></span>简介</a>
-          <a href="#schedule" class="btn btn-github"><span class="icon"></span>安排与资料</a>
-          <a href="#mentors" class="btn btn-github"><span class="icon"></span>团队</a>
-        </section>
+        <h1>西南交通大学：从代码到实物：造你所想</h1>
+        <h2>From codes to things,Make what you think.</h2>
+        <div class="nav">
+          <a href="#plan" class="btn btn-github"><span class="icon"></span>教学安排</a>
+          <a href="#learn" class="btn btn-github"><span class="icon"></span>课程内容</a>
+          <a href="#students" class="btn btn-github"><span class="icon"></span>同学团队及造物分享</a>
+          <a href="https://zaowu.fun" class="btn btn-github"><span class="icon"></span>制作手册：凿物</a>
+          <a href="#mentors" class="btn btn-github"><span class="icon"></span>教师团队</a>
+          <a href="#intro" class="btn btn-github"><span class="icon"></span>课程简介</a>
+        </div>
       </div>
-    </header>
+</div>
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-          <a id="welcome" class="anchor" href="#welcome" aria-hidden="true">简介</a>
-        </h3>
-        <p>
-课程始于2015年举办的西南交通大学青年教师教学能力提升研修班，2015年秋季立项建设，2016年春季开课。
-</p>
-<p>
-课程的内容和进度为三个阶段：低阶的基础技术、中阶的设计与创造、高阶的创新创业。
-</p>
-<ol><li>
+<div class="content">
+  <div class="container">
+    <h3 id="plan" class="title">教学安排</h3>
+    <table>
+      <thead>
+        <tr>
+        <th>时间</th><th>地点</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>2019年秋：1-17周 星期二 11-12节（晚上19:30-21:05）</td><td>交大创客空间（工程训练中心A座4楼）</td>
+      </tr>
+      <tr>
+        <td>2019年春：1-17周 星期二 11-12节（晚上19:30-21:05）</td><td>交大创客空间（工程训练中心A座4楼）</td>
+      </tr>
+      <tr>
+        <td>2018年秋：1-17周 星期二 11-12节（晚上19:30-21:05）</td><td>X4135，交大创客空间（工程训练中心A座4楼）</td>
+      </tr>
+      <tr>
+        <td>2018年春：1-17周 星期五 11-12节（晚上19:30-21:05）</td><td>X1102，交大创客空间（工程训练中心A座4楼）</td>
+      </tr>
+      <tr>
+        <td>2017年秋：1-17周 星期五 11-12节（晚上19:30-21:05）</td><td>X4129，交大创客空间（工程训练中心A座4楼）</td>
+      </tr>
+      <tr>
+        <td>2017年春：1-17周 星期五 11-12节（晚上19:30-21:05）</td><td>X1106，唐臣书院科创室</td>
+      </tr>
+      <tr>
+        <td>2016年秋：3-17周 星期六 6-9节（14:00-17:25）</td><td>X9203，唐臣书院二楼</td>
+      </tr>
+      <tr>
+        <td>2016年春：1-17周 星期五 8-10节（15:50—18:15）</td><td>X9457，唐臣书院科创室</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <h3 id="learn" class="title">课程内容</h3>
+    <ol>
+    <li>
+      <a href="course/s1_makermove-pm.html">原则与要求、创客（造物）运动、项目管理</a> by Li Jun
+    </li>
+    <li>
+      <a href="course/s2_cad.html">计算机辅助设计</a> By Wang Heng
+    </li>
+    <li>
+      <a href="course/s5_3dprinting.html">3D打印和3D的扫描</a> By Gong Li,Wang Heng
+    </li>
+    <li>
+      <a href="course/s3_cutting.html">二维设计、激光切割</a> By Yuan Hong,Zhang Berlin
+    </li>
+    <li>
+      <a href="course/s9_embedded_programming.html">嵌入式程序设计、开源硬件</a> By Zhang Berlin
+    </li>
+    <li><a href="course/files/level1-assessment.pdf">第一阶段作业</a></li>
+
+    <li>
+      <a href="course/s10_input_device.html">输入、输出</a> By Zhang Berlin
+    </li>
+    <li>
+      <a href="course/s7_eda.html">电子设计</a> By Luo Xiaoxiang
+    </li>
+    <li>
+      <a href="course/s4_elec_produce.html">电子制造</a> By Yu Hui
+    </li>
+    <li>
+      <a href="course/s6_ccm.html">数控加工</a> By Zhou Dan
+    </li>
+    <li>
+      <a href="course/s8_molding_casting.html">雕刻、铸模</a> By Zhou Dan
+    </li>
+    <!-- <li>
+      <a href="course/s11_output_device.html">输出设备</a> By Zhang Berlin
+    </li>
+    -->
+    <li>
+      <a href="course/s12_comm_network.html">网络与通信</a> By Li Jun
+    </li>
+    <li>
+    <a href="course/s13_user_interface.html">用户接口与界面</a> By Ju Dalong
+    </li>
+    <li>
+    <a href="course/s14_manufacture_design.html">制造与设计</a> By Ju Dalong
+    </li>
+    <li>
+      制作一个最终项目，为你的产品包装并策划一个发布会 By all.
+    </li>
+    </ol>
+
+    <h3 id="students" class="title"> 学习成果</h3>
+      <h4>2019春季</h4>
+      <ul>
+        <li><a href="https://doingpower.github.io/code/">宿舍智能灯具</a></li>
+        <li><a href="https://tavis0.github.io/life-lights/">舞“导”可移动式视觉交通信号灯</a></li>
+        <li><a href="https://honglipang.github.io/Light-Alarm/">声音提示和光提示结合的闹钟</a></li>
+        <li><a href="https://godzzxw.github.io/Group_Code2Things/">助眠枕头</a></li>
+        <li><a href="https://wuwey.github.io/umbrella/">发光的雨伞</a></li>
+        <li><a href="https://chiangyintso.github.io/codeToThing/">改装毛绒玩具</a></li>
+      </ul>
+      <h4>2018秋季</h4>
+      <ul>
+        <li>待整理</li>
+      </ul>
+      <h4>2018春季</h4>
+      <ul>
+          <li>待整理</li>
+      </ul>
+      <h4>2017秋季</h4>
+      <ul>
+          <li><a href="https://infi-sunburst.github.io/group-4-creation/">Group-4-Creation</a></li>
+          <li><a href="https://qwerdfb.github.io/sixsixsix/">SIXSIXSIX</a></li>
+          <li><a href="https://guoggggggg.github.io/new-new-thing/">new-new-thing</a></li>
+          <li><a href="https://wind31.github.io/code2things/">wind31</a></li>
+          <li><a href="https://sssdiamond.github.io/ddhjhjhk/">sssdiamond</a></li>
+          <li><a href="https://df11-0076.github.io/codes2things201705/">df11-0076</a></li>
+          <li><a href="https://codeplay2.github.io/kungfu/">kungfu</a></li>
+
+      </ul>
+      <h4>2017春季学生网站</h4>
+      <ul>
+          <li><a href="https://libeiyang.github.io/qiqi/">基者也风流:李北阳、王子睿</a></li>
+          <li><a href="https://houhao502.github.io/give/">薯片队:后豪、罗辑、秦慧、胡恒溢</a></li>
+          <li><a href="https://fuxiyu399.github.io/Baymax/">Baymax:任钰、卞梦奇、李航瑛</a></li>
+          <li><a href="https://doh12345.github.io/robot-control/">Robot Control Design:张权</a></li>
+          <li><a href="https://andybernie.github.io/2017/05/05/codes2things/">电量百分百：刘英杰、郑昊天、白方林、边岱森、陈俊文</a></li>
+          <li><a href="http://xuwudi.github.io/2things">Black:邹义童、祝祎仕、徐子豪、廖梦</a></li>
+          <li><a href="https://beginnerever.github.io/C2T/">C2T:张羽、曹越、石文旭</a></li>
+          <li><a href="https://terrelllucifer.github.io/light/">night:徐仕佶、张卫、王泽堃</a></li>
+      </ul>
+      <h4>2016秋季学生网站</h4>
+      <ul>
+        <li><a href="https://evitachan.github.io/fan/">陈燕铭  蔡昭晨  郑政    陆禹佳</a></li>
+        <li><a href="https://yulongxuesan.github.io/The-Geeks-4">蒋映洲  孙文俊  杨逸    王渝淇</a></li>
+        <li><a href="https://xyc666.github.io/Codestothings/">马震宇  徐翊宸  郭燚博  李婧祺   齐钰馨</a></li>
+        <li><a href="https://aoba98.github.io/KeyboardDIY">刘钊玮   黄垠钦  崔登帅  蓝钰銘</a></li>
+        <li><a href="https://ffffk.github.io/from-codes-to-things">刘佐政  邱元森  樊雨珂  </a></li>
+        <li><a href="https://chipsandpie.github.io/Rainbow6/">张凯  周成    陈欢    卓琪     黄昕劢</a></li>
+      </ul>
+
+      <h4>2016春季学生网站</h4>
+     <ul>
+       <li><a href="https://stevenhouse.github.io/TIE--Breaker/">TIE--Breaker Group,Member:林泓熙、吴松、刘胜科、宋友祥</a></li>
+       <li><a href="http://1654366371.github.io/Better-Maker/">Better Maker Group,Member：刘澍泽、孙源流、韩 悦</a></li>
+       <li><a href="http://l-c-yang.github.io/L-C-Yang-/">极客3H组 Group,Member:石嘉慧、柳晨阳、张祥毅、李子豪</a></li>
+       <li><a href="https://ggndegh.github.io/OUR-SHOW/">Our-show Group,Member:朱政、曾洪哲、张露阳、郭冠男</a></li>
+       <li><a href="https://iseekright.github.io/maoli5/">毛利五小郎组 Group,Member:盛志、贺一凡、张皓迪、王子聪、林位麒</a></li>
+       <li><a href="http://fanfanhd.github.io/fgg-vvf/">从理论到创作之路 Group,Member:丁睿洋、张博文、范家玮、王巧、陈潜</a></li>
+     </ul>
+     <h4>个人网站</h4>
+      <ul>
+        <li>  <a href="http://swite007.github.io/Swite.github.io/" target="_blank">韩久隆</a></li>
+        <li>  <a href="http://huberdew.github.io/First-show/" target="_blank">冯乾宽</a></li>
+        <li>  <a href="http://fanfanhd.github.io/fgg-vvf/" target="_blank">范家玮</a></li>
+        <li>  <a href="http://z1647481316.github.io/Enjoy-Myself/" target="_blank">张博文</a></li>
+        <li>  <a href="http://mrzhd.github.io/ZHD/" target="_blank">张皓迪</a></li>
+        <li>  <a href="http://iseekright.github.io/first-world/" target="_blank">贺一凡</a></li>
+        <li>  <a href="http://l-c-yang.github.io/L-C-Yang-/" target="_blank">柳晨阳</a></li>
+        <li>  <a href="http://maolixue.github.io/lixue/" target="_blank">盛  志</a></li>
+        <li>  <a href="http://andersen1997.github.io/Andersen-s-First-Show/" target="_blank">林泓熙</a></li>
+        <li>  <a href="http://litfred.github.io/our-own-product-beyond-everything/" target="_blank">吴松</a></li>
+        <li>  <a href="http://limmerse.github.io/Lakens-idioC2Tsite/" target="_blank">刘胜科</a></li>
+        <li>  <a href="http://stevenhouse.github.io/Craftsmen-s-Workplace/" target="_blank">宋友祥</a></li>
+      </ul>
+
+    <h3 id="mentors" class="title">团队</h3>
+    <p>
+    授课教师有：<br/>
+    李君 西南交通大学信息科学与技术学院 工程师/利兹实验室主任<br/>
+    王衡 西南交通大学工程训练中心 工程师/创新部部长<br/>
+    李然 西南交通大学建筑与设计学院 讲师，硕士生导师<br/>
+    吴永萌 西南交通大学建筑与设计学院 讲师<br/>
+    胡香蓉 西南交通大学信息科学与技术学院 讲师<br/>
+    吕爱芬 西南交通大学工程训练中心 工程师<br/>
+    </p>
+    <p>
+    参与建设的教师还有：<br/>
+    袁红 西南交通大学建筑与设计学院 副教授，博士生导师<br/>
+    张柏霖 四川成都新都新川外国语学校 信息技术学科负责人<br/>
+    鞠大龙 成都魅客科技有限公司 董事长<br/>
+    骆晓祥 成都魅客科技有限公司 CEO<br/>
+    余晖 成都魅客科技有限公司 联合创始人<br/>
+    陈翔 原英特尔成都测试工程部经理<br/>
+    </p>
+    <p>
+    对本课程给予长期指导的老师有：<br/>
+    西南交通大学教务处 范怡红 教授/特聘专家<br/>
+    西南交通大学信息科学与技术学院 郝丽 教授/院长<br/>
+    西南交通大学工程训练中心 李柏林 教授/院长<br/>
+    </p>
+    <h3 id="intro"  class="title">课程简介</h3>
+    <p>
+    课程始于2015年举办的西南交通大学青年教师教学能力提升研修班，2015年秋季立项建设，2016年春季开课。
+    </p>
+    <p>
+    课程的内容和进度为三个阶段：低阶的基础技术、中阶的设计与创造、高阶的创新创业。
+    </p>
+    <ol><li>
     第一阶段，学习创客社区里面常用的一些数字化的工程技术，比如二维三维设计、3D打印、激光切割、开源硬件等技术，然后制作一个综合的作品，比如小型避障小车，掌握综合应用技术来制作实物作品的能力。
-  </li>
-  <li>
+    </li>
+    <li>
     第二阶段，引入真实问问题和设计思维，通过开展设计工作坊、头脑风暴等活动，面对真实问题，探讨解决方案，然后进行产品或者装置的研发实践，最终制作一个作品以及相关的说明文档、网站等资料，并且进行公开展示和答辩。贯穿着学生项目制作和研讨的过程中，教师辅助性的还会介绍团队管理的技术和工具、网页制作的技术和工具、CNC数控加工、网络通信、网络编程等一些内容。
-  </li>
-  <li>
+    </li>
+    <li>
     第三阶段，给学生提供一些后续的比赛和应用场景的支持，鼓励学生参与社会实践，实现技术方案进一步的迭代发展，鼓励他们在实践中实现真正的创新。
-  </li>
-  </ol>
-  <p>
+    </li>
+    </ol>
+    <p>
     成绩构成分三部分：作业方式体现的学习过程与收获（30%） 、期末大作业的演示效果（40%）、期末大作业的设计与意义（30%）。
-  </p>
-  <p>学习过程评价：引入Git代码管理的模式，学生在团队的项目和代码仓库中体现学习过程，形成第一部分分数。
+    </p>
+    <p>学习过程评价：引入Git代码管理的模式，学生在团队的项目和代码仓库中体现学习过程，形成第一部分分数。
     </p>
     <p>
     期末大作业评价：组织公开展示，学生需要演示产品原型并进行答辩，由课程指导老师和嘉宾担当评审并打分，形成第二、三部分成绩。
-  </p>
-        <h3>
-          <a id="schedule" class="anchor" href="#schedule" aria-hidden="true">课程安排与学习资料</a>
-        </h3>
-        <ul>
-          <li><a href="http://jwc.swjtu.edu.cn/vatuu/CourseAction?setAction=queryCourseList&selectTableType=ThisTerm">查询课表</a></li>
-          <li><a href="/course/spring/index.html" title="course-schedule-spring">安排与资料</a></li>
-        </ul>
-        <h3>
-          <a id="mentors" class="anchor" href="#mentors" aria-hidden="true">团队</a>
-        </h3>
-        <p>
-        授课教师有：<br/>
-        李君 西南交通大学信息科学与技术学院 工程师/利兹实验室主任<br/>
-        王衡 西南交通大学工程训练中心 工程师/创新部部长<br/>
-        李然 西南交通大学建筑与设计学院 讲师，硕士生导师<br/>
-        吴永萌 西南交通大学建筑与设计学院 讲师<br/>
-        胡香蓉 西南交通大学信息科学与技术学院 讲师<br/>
-        吕爱芬 西南交通大学工程训练中心 工程师<br/>
-        </p>
-        <p>
-        参与建设的教师还有：<br/>
-        袁红 西南交通大学建筑与设计学院 副教授，博士生导师<br/>
-        张柏霖 四川成都新都新川外国语学校 信息技术学科负责人<br/>
-        鞠大龙 成都魅客科技有限公司 董事长<br/>
-        骆晓祥 成都魅客科技有限公司 CEO<br/>
-        余晖 成都魅客科技有限公司 联合创始人<br/>
-        陈翔 原英特尔成都测试工程部经理<br/>
-        </p>
-        <p>
-        对本课程给予长期指导的老师有：<br/>
-        西南交通大学教务处 范怡红 教授/特聘专家<br/>
-        西南交通大学信息科学与技术学院 郝丽 教授/院长<br/>
-        西南交通大学工程训练中心 李柏林 教授/院长<br/>
-        </p>
-      </section>
-      <section id="footer">
-        <a href="https://github.com/swjtu-maker/codes2things" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        Copyright by SWJTU Maker,2015～2020
-      </section>
-      <p></p>
+    </p>
 
-    </div>
-
+  </div>
+</div>
 
   </body>
 </html>
