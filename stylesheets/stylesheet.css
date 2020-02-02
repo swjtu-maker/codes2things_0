@@ -31,9 +31,9 @@ a{
 /*header*/
 .header .nav{
   margin-top:1em;
+  font-size:1.5em;
 }
 .header .nav a{
-  font-size:1.5em;
   margin-right:1em;
 }
 .header .nav a:hover{
@@ -49,9 +49,10 @@ a{
   font-size:1.5em;
   padding-left:1em;
   padding-bottom:0.5em;
-
 }
-
+.content h4{
+  font-size:1.2em;
+}
 /*table*/
 table {
   width: 100%;
