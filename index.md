@@ -26,6 +26,7 @@
 *   [二维设计与激光切割](course/s4_cutting.md)
 *   [嵌入式系统以及开源硬件](course/s5_embedded_programming.md)
 *   [中期项目](course/assessment1.md)
+
 ## 第2阶段：designer
 *   [设计思维](course/s6_design_thinking.md)
 *   [设计工作坊](course/s7_design_workshop.md)
@@ -37,6 +38,7 @@
 *   [数控制造](course/s11_cnc.md)
 *   [期末项目研讨](course/s12_workshop.md)
 *   [展览](course/s13_show.md)
+
 ## 第3阶段：innovator
 *   [输入与输出](course/s14_io_device.md)
 *   [网络与通信](course/s10_networking.md)
